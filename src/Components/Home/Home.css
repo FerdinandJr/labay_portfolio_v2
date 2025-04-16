@@ -1,0 +1,65 @@
+.home{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    max-width: 540px;
+    text-align: center;
+}
+
+.home_img{
+    margin-bottom: 1.5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.home_name{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5rem;
+}
+
+.home_title{
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: var(--font-semibold);
+    color: var(--text-color);
+}
+
+.arrow_down {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    flex-direction: column; /* Stack the arrows vertically */
+    align-items: center; /* Center the arrows within the container */
+}
+
+.arrow{
+    width: 10px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 6px;
+    display: flex; /* Make it a flex container */
+    justify-content: center;
+    align-items: center;
+    animation: move 1.1s infinite ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px); /* Move it down */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

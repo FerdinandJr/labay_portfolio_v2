@@ -1,0 +1,6 @@
+.about_data{
+    padding: 1.875rem;
+    background-color: var(--container-background);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+}

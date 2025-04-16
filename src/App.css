@@ -1,0 +1,8 @@
+.infinityloop {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    height: 100vh;           /* Full viewport height */
+    width: 100%;             /* Full width of the parent */
+}

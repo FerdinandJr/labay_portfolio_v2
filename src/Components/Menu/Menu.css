@@ -1,0 +1,123 @@
+aside{
+    display: flex;
+}
+
+i{
+    font-size: 1.5rem;
+}
+
+.profile_img{
+    width: 2.5rem;
+    border-radius: 50%;    
+}
+
+.nav_menu{
+    display: flex;
+    gap: 15rem;
+    margin-top: 10px;
+}
+
+.aside{
+    position: fixed;
+    top: 0px;
+    background-color: var(--background-color);
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+    width: 100%;
+    padding: 10px 50px;
+    align-items: center;
+   
+}
+
+.nav_list{
+    column-gap: 3rem;
+    display: flex;
+}
+
+.nav_list_icons{
+    column-gap: 3rem;
+    display: flex;
+}
+
+.nav_link{
+    font-size: 1rem;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.copyright{
+    color: hsl(245, 15%, 65%);
+    font-size: var(--small-font-size);
+    transform: rotate(-180deg);
+}
+
+i:hover{
+    transform: scale(1.2);
+}
+
+.nav_link:hover{
+    color: hsl(10, 50%, 50%);
+}
+
+
+.nav_toggle{
+    position: fixed;
+    top: 1.25rem;
+    left: 1.875rem;
+    cursor: pointer;
+    height: 40px;
+    width: 45px;
+    background-color: var(--background-color);
+    z-index: 5;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1024px) {
+    .aside {
+        display: inline-block;
+        width: 8rem;
+        padding: 1rem;
+        top: -1400px;
+        background-color: var(--background-color);
+        height: 100%;
+
+        text-align: center;
+    }
+    .nav_toggle-open{
+        left: 140px;
+    }
+    .nav_toggle{
+        display: flex;
+    }
+    .show-menu{
+        top: 0;
+    }
+    .nav_list{
+        display: inline-block;
+    }
+    .nav_list_icons{
+        left: 0;
+        display: block;
+    }
+    .nav_menu{
+        display: block;
+    }
+    .nav_item{
+        margin-bottom: 1rem;
+    }
+    .nav_footer{
+        position: relative;
+        bottom: -2rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .nav_menu{
+        gap: 2rem;
+    }
+}
