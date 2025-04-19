@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './Blogs.css';
 
-const API_KEY = "AIzaSyDeARxwoxiGaOTS4Q70l3GXhz2IIdcX7Jc"; // Replace with your API key
-const CHANNEL_ID = "UCzO-PBrczXmHZ-kJpreIYTA"; // Replace with your channel ID
+const API_KEY = " "; // Replace with your API key
+const CHANNEL_ID = " "; // Replace with your channel ID
 const MAX_RESULTS = 50; // Fetch more upfront so we can load in batches
 
 const Blogs = () => {
